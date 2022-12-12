@@ -135,4 +135,26 @@ header .description p {
   padding: 8px;
   background-color: var(--white);
 }
+
+@media screen and (max-width: 452px) {
+  body {
+    padding: 30px 35px 0;
+  }
+  .main-wrap {
+    width: 370px;
+  }
+  .main-wrap select {
+    width: 300px;
+  }
+  .main-wrap .number {
+    width: 300px;
+  }
+  .main-wrap button {
+    width: 60px;
+    height: 40px;
+  }
+  .main-wrap .answer {
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
