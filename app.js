@@ -44,7 +44,7 @@ const oBases = function (users, base) {
             item = 12;
         }
         if (item >= base) {
-            result = 'Invalid Entry';
+            result = 'Invalid Entry                                                       ';
         } else {
             result += item * Math.pow(base, index);
         }
