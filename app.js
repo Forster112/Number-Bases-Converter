@@ -44,7 +44,7 @@ const oBases = function (users, base) {
         } else if (item === 'C') {
             item = 12;
         }
-        myarr.push(+item)
+        if (item <= "F") myarr.push(+item);
     })
     if (myarr.some(num => num >= base)) result = 'Invalid Entry';
     else result = myarr.reduce((acc, cur, i) => acc + (cur * Math.pow(base, i)), 0);
