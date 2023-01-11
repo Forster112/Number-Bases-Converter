@@ -11,14 +11,12 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: -webkit-gradient(linear, right top, left bottom, from(var(--primary-color)), to(var(--primary-color)));
   background: linear-gradient(to bottom left, var(--primary-color), var(--primary-color));
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
@@ -29,109 +27,87 @@ body {
 
 header h1 {
   margin: 0 0 20px 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
-
 header .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-left: 40px;
 }
-
 header .description .beaut {
   width: 4px;
   height: 70px;
   background-color: var(--grey);
 }
-
 header .description p {
   margin-left: 20px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 .main-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 420px;
   width: 420px;
   border: 1px solid var(--secondary-color);
   border-radius: 15px;
   margin-top: 30px;
 }
-
 .main-wrap select {
   width: 350px;
   height: 40px;
   margin: 20px 30px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 8px;
   background-color: var(--white);
 }
-
 .main-wrap #from {
   margin-top: 40px;
 }
-
 .main-wrap .number {
   width: 350px;
   height: 40px;
   margin: 20px 30px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   text-transform: uppercase;
   padding: 8px;
   background-color: var(--white);
 }
-
 .main-wrap button {
   height: 50px;
   width: 70px;
   margin: 10px 0;
   border-radius: 10px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 15px;
   color: var(--white);
   border-color: var(--white);
 }
-
 .main-wrap .convert {
   margin-left: 30px;
   margin-right: 10px;
   background-color: var(--green);
 }
-
 .main-wrap .convert:hover {
   background-color: var(--green-2);
 }
-
 .main-wrap .reset {
   background-color: var(--red);
 }
-
 .main-wrap .reset:hover {
   background-color: var(--red-2);
 }
-
 .main-wrap .answer {
   width: 350px;
   height: 40px;
   margin: 20px 30px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 8px;
   background-color: var(--white);
 }
@@ -156,5 +132,4 @@ header .description p {
   .main-wrap .answer {
     width: 260px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

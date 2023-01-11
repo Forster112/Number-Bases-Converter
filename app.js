@@ -29,26 +29,25 @@ function reverseArr(input) {
 //function that converts from other bases to base 10
 const oBases = function (users, base) {
     let result = 0;
-    reverseArr(users).forEach((item, index) => {
-        if (item == 'F' && base > 15) {
+    const myarr = [];
+    reverseArr(users).forEach((item) => {
+        if (item === 'F') {
             item = 15;
-        } else if (item == 'A' && base > 10) {
+        } else if (item === 'A') {
             item = 10;
-        } else if (item == 'D' && base > 13) {
+        } else if (item === 'D') {
             item = 13;
-        } else if (item == 'E' && base > 14) {
+        } else if (item === 'E') {
             item = 14;
-        } else if (item == 'B' && base > 11) {
+        } else if (item === 'B') {
             item = 11;
-        } else if (item == 'C' && base > 12) {
+        } else if (item === 'C') {
             item = 12;
         }
-        if (item >= base) {
-            result = 'Invalid Entry                                                       ';
-        } else {
-            result += item * Math.pow(base, index);
-        }
+        myarr.push(+item)
     })
+    if (myarr.some(num => num >= base)) result = 'Invalid Entry';
+    else result = myarr.reduce((acc, cur, i) => acc + (cur * Math.pow(base, i)), 0);
     return result;
 }
 
@@ -58,8 +57,7 @@ function toBaseTwo(item) {
     let answer = []
     while (main > 0) {
         answer.push(main % 2)
-        main = parseInt(main / 2)
-        
+        main = parseInt(main / 2) 
     }
     let newans = reverseArr(answer)
     return newans.join('')
